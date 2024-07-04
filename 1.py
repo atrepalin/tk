@@ -45,7 +45,7 @@ def save_file_history():
         f.writelines(letter)
     
 def popup(event):
-    popupmenu.post(event.x_window, event.y_window)
+    popupmenu.post(event.x_root, event.y_root)
 
 def history_clear():
     answer = mb.askyesno(title="Подтверждение действия", message="Очистить историю?")
